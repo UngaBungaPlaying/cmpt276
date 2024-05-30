@@ -1,4 +1,4 @@
-package com.cmpt276.as1.as1;
+package com.cmpt276.as1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
