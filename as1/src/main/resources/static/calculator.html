@@ -18,39 +18,43 @@
                 <div class="blue">
                     <h3>Activities</h3>
                     <p>Give grades to the numeric activities:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Short Name</th>
-                                <th scope="col">Weight</th>
-                                <th scope="col">Grade</th>
-                                <th scope="col">Percent</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Activity 1</td>
-                                <td>A1</td>
-                                <td><input min="0" size="5" height="15"></td>
-                                <td><input min="0" size="5"> / <input min="0" size="5"></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>
-                        <input type="button" value="ADD ROW">
-                    </p>
+                        <table id="gradesTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Short Name</th>
+                                    <th scope="col">Weight</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Percent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Activity 1</td>
+                                    <td>A1</td>
+                                    <td><input class="weight" min="0" size="3"></td>
+                                    <td><input class="numerator" min="0" size="3"> / <input class="denominator" min="0" size="3"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <input type="button" value="ADD ROW" onclick="addRow()">
+                        </p>
                         <h3>Result</h3>
+                        <p id="resultText"></p>
                     <p>
 
                     <p class="math">
-                        <input type="button" class="mathButton" value="WEIGHTED">
-                        <input type="button" class="mathButton" value="MEAN">
+                        <input type="button" class="mathButton" value="WEIGHTED" onclick="ResultWeighted()">
+                        <input type="button" class="mathButton" value="MEAN" onclick="ResultMean()">
                     </p>
                 </div>
             </div>
         </div>
     </main>
 </body>
+<footer>
+    <script src="script.js"></script>
+</footer>
 </html>

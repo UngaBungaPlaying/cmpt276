@@ -15,8 +15,11 @@ td {
 }
 
 
+
+
 html{
     background-color: #a6192d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -43,6 +46,12 @@ h3{
     color: #a6192d;
 }
 
+h2{
+    font-size:xx-large;
+}
+
+
+
 .math {
     text-align: right;
 }
@@ -53,4 +62,8 @@ h3{
     border-radius: 8px;
     padding: 8px;
     width: 100px;
+}
+
+.weight, .numerator, .denominator{
+    height: 30px;
 }
